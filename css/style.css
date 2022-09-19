@@ -119,9 +119,32 @@ h3{
     font-size: 2.8rem;
     color: var(--secundario);
 }
-.producto__nombre,.producto__precio{
+.producto__nombre,
+.producto__precio{
     font-family: var(--fuenteprincipal);
     margin: 1rem 0;
     text-align: center;
     line-height: 1.2;
+}
+/*Graficos*/
+.grafico{
+    min-height: 30rem;
+    background-repeat:no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+.grafico--camisas{
+    grid-row: 2 / 3;
+    background-image: url(../img/grafico1.jpg);
+}
+.grafico--node{
+    grid-row: 8 / 9;
+    background-image: url(../img/grafico2.jpg);
+}
+@media (min-width: 768px) {
+    .grafico--node{
+        background-image: url(../img/grafico2.jpg);
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+    }
 }
